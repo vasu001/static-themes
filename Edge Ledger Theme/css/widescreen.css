@@ -1,0 +1,15 @@
+.items .item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+.items .item a i {
+  margin-right: 2.08rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=widescreen.css.map */

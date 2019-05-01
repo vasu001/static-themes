@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAE,AAEU,MAFJ,CACA,KAAK,CACD,CAAC,CAAC;EACE,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,IAAI;CAOnB;;AAXX,AAMc,MANR,CACA,KAAK,CACD,CAAC,CAIG,CAAC,CAAC;EACE,YAAY,EAAE,OAAO;EACrB,UAAU,EAAE,MAAM;EAClB,aAAa,EAAE,CAAC;CACnB",
+    "sources": [
+        "../scss/widescreen.scss"
+    ],
+    "names": [],
+    "file": "widescreen.css"
+}

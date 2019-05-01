@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700");
+/* Normalization */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: #333;
+}
+
+/* Utility Classes */
+.text-primary {
+  color: #93cb52;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-link:active, .nav-link:hover, .nav-link:focus {
+  outline: 0;
+}
+
+.l-heading {
+  font-size: 6.4rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+  line-height: 1.2;
+}
+
+.m-heading {
+  font-size: 3.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 2.4rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #93cb52;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  display: inline-block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #7ab436;
+}
+
+.btn-dark {
+  background-color: #333;
+  margin-top: 1rem;
+  padding: 1rem 4rem;
+  font-weight: 300;
+}
+
+.btn-dark:hover {
+  cursor: pointer;
+  background-color: #000;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 3.2rem;
+  overflow: hidden;
+}
+
+.py-1 {
+  padding: 2.08rem;
+}
+
+.py-2 {
+  padding: 3.2rem;
+}
+
+.py-3 {
+  padding: 4.8rem;
+}
+
+.p-1 {
+  padding: 2.08rem;
+}
+
+.p-2 {
+  padding: 3.2rem;
+}
+
+.p-3 {
+  padding: 4.8rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background-color: #111;
+  color: #f4f4f4;
+}
+
+.bg-primary {
+  background-color: #7ab436;
+  color: #fff;
+}
+
+.list {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+
+.list li {
+  padding: 0.5rem 0;
+}
+
+/* Navbar */
+#navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.6rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  z-index: 1;
+}
+
+#navbar #logo {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+#navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#navbar ul li a:active, #navbar ul li a:focus {
+  outline: 0;
+}
+
+#navbar ul li a:hover {
+  background-color: #93cb52;
+  border-radius: 0.5rem;
+  outline: 0;
+}
+
+/* Showcase */
+#showcase {
+  background: #333 url("./../img/skylimiter.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 3.2rem;
+  /* Overlay */
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Sections: What We Do */
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.6rem;
+}
+
+.items .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+.items .item a {
+  color: #333;
+  border: none;
+  display: inline-block;
+  padding: 1.6rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.items .item a i {
+  background-color: #93cb52;
+  color: #fff;
+  padding: 1.6rem;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
+}
+
+.items .item a div h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.items .item a div p {
+  font-size: 1.6rem;
+}
+
+.items .item a:active, .items .item a:focus {
+  outline: 0;
+}
+
+.items .item a:hover {
+  background-color: #7ab436;
+  cursor: pointer;
+  outline: 0;
+}
+
+.items .item a:hover i {
+  background-color: #fff;
+  color: #7ab436;
+}
+
+.items .item a:hover div {
+  color: #fff;
+}
+
+/* Section: Who We Are */
+#who {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#who div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#who .img-who {
+  background: url("./../img/team.jpg") no-repeat center center/cover;
+}
+
+#who .text-who {
+  font-size: 1.6rem;
+}
+
+#who .text-who h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#who .text-who p {
+  margin-bottom: 1rem;
+}
+
+/* Section: Clients */
+#clients {
+  background-color: #fff;
+}
+
+#clients .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#clients .items div {
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#clients .items div img {
+  width: 15rem;
+  padding: 1rem;
+}
+
+/* Section: Contacts */
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contact .contact-form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1.6rem;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem 0;
+}
+
+#contact .contact-form .form-group label {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#contact .contact-form .form-group .form-control {
+  width: 100%;
+  height: 3.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+#contact .contact-form .form-group .form-control-message {
+  height: 10rem;
+}
+
+#contact .contact-map {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+#main-footer {
+  font-size: 1.6rem;
+}
+/*# sourceMappingURL=style.css.map */

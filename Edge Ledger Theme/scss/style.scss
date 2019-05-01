@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700');
+
+$bodyFont: 'Lato', sans-serif;
+$headerFont:'Josefin Slab', serif;
+$textPrimaryColor: #93cb52; 
+$navbarBackgroundColor: rgba(0, 0, 0, 0.8);
+$navbarFontColor: #fff;
+$anchorLinkColor: #fff;
+$anchorHoverBackgroundColor: #93cb52;
+
+/* Normalization */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: $bodyFont;
+    background: #333;
+}
+
+/* Utility Classes */
+
+.text-primary {
+    color: $textPrimaryColor;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-link:active, .nav-link:hover, .nav-link:focus {
+    outline: 0;
+}
+
+// .nav-list {
+//     list-style-type: none;
+// }
+
+.l-heading {
+    font-size: 6.4rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+    line-height: 1.2;
+}
+
+.m-heading {
+    font-size: 3.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+    line-height: 1.1;
+}
+
+.lead {
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #93cb52;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    display: inline-block;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: #7ab436;
+    }
+}
+
+.btn-dark {
+    background-color: #333;
+    margin-top: 1rem;
+    padding: 1rem 4rem;
+    font-weight: 300;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #000;
+    }
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 3.2rem;
+    overflow: hidden;
+}
+
+.py-1 { padding: 2.08rem; }
+.py-2 { padding: 3.2rem; }
+.py-3 { padding: 4.8rem; }
+.p-1 { padding: 2.08rem; }
+.p-2 { padding: 3.2rem; }
+.p-3 { padding: 4.8rem; }
+
+.text-center {
+    text-align: center;
+}
+
+.bg-light {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background-color: #111;
+    color: #f4f4f4;
+}
+
+.bg-primary {
+    background-color: #7ab436;
+    color: #fff;
+}
+
+.list {
+    list-style: none;
+    margin: 0.5rem 0;
+
+    li {
+        padding: 0.5rem 0;
+    }
+}
+
+/* Navbar */
+
+#navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem;
+    background-color: $navbarBackgroundColor;
+    color: $navbarFontColor;
+    z-index: 1;
+
+    #logo {
+        font-size: 4rem;
+        font-weight: 300;
+    }
+    
+    ul {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+
+        li {
+            a {
+                color: $anchorLinkColor;
+                padding: 0.75rem;
+                margin: 0 0.25rem;
+                transition: all 0.3s;
+
+                &:active, &:focus {
+                    outline: 0;
+                }
+
+                &:hover {
+                    background-color: $anchorHoverBackgroundColor;
+                    border-radius: 0.5rem;
+                    outline: 0;
+                }
+            }
+        }
+    }
+}
+
+/* Showcase */
+#showcase {
+    background: #333 url('./../img/skylimiter.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+
+    .showcase-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        // width: 100%;
+        padding: 0 3.2rem;
+
+        /* Overlay */
+        position: absolute;
+        top: 8rem;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+}
+
+/* Sections: What We Do */
+
+.items {
+    display: flex;
+    padding: 1.6rem;
+
+    .item {
+        flex: 1;
+        text-align: center;
+
+
+        a {
+            color: #333;
+            border: none;
+            display: inline-block;
+            padding: 1.6rem;
+            transition: all 0.5s;
+            i {
+                background-color: #93cb52;
+                color: #fff;
+                padding: 1.6rem;
+                border-radius: 50%;
+                margin-bottom: 1.6rem;
+
+            }
+
+            div {
+                h3 {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+            
+            &:active, &:focus {
+                outline: 0;
+            }
+            
+            &:hover {
+                background-color: #7ab436;
+                cursor: pointer;
+                outline: 0;
+
+                i {
+                    background-color: #fff;
+                    color: #7ab436;
+                }
+
+                div {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+/* Section: Who We Are */
+#who {
+    display: flex;
+
+    div {
+        flex:1;
+    }
+
+    .img-who {
+        background: url('./../img/team.jpg') no-repeat center center/cover;
+    }
+
+    .text-who {
+        font-size: 1.6rem;
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+/* Section: Clients */
+
+#clients {
+    background-color: #fff;
+
+    .items {
+        display: flex;
+        justify-content: space-evenly;
+        div {
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            img {
+                width: 15rem;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+/* Section: Contacts */
+#contact {
+    display: flex;
+
+    .contact-form {
+        flex: 1;
+        font-size: 1.6rem;
+
+        .form-group {
+            margin: 0.75rem 0;
+
+            label {
+                display: block;
+                margin-bottom: 0.2rem;
+                font-size: 2rem;
+                font-weight: 500;
+            }
+
+            .form-control {
+                width: 100%;
+                height: 3.2rem;
+                border-radius: 0.5rem;
+                border: none;
+                padding: 1rem;
+                margin-top: 0.5rem;
+            }
+
+            .form-control-message {
+                height: 10rem;
+            }
+        }
+    }
+
+    .contact-map {
+        flex: 2;
+    }
+}
+
+#main-footer {
+    font-size: 1.6rem;
+}

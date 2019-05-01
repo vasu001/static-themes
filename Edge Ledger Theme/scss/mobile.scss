@@ -1,0 +1,33 @@
+  .items {
+      display: block;
+      padding: 1.6rem;
+        .item {
+            a {
+                display: flex;
+                text-align: left;
+
+                i {
+                    margin-right: 2.08rem;
+                    align-self: center;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+/* Smartphones */
+@media(max-width: 500px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.6rem;
+        padding: 0;
+
+        #logo {
+            margin-bottom: 0;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 400;
+        }
+    }
+}
